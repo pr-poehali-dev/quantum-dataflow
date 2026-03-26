@@ -1,30 +1,30 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, Building, Armchair, Trees } from "lucide-react"
+import { Tv, Users, Music, Trophy } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
   {
-    title: "Жилая архитектура",
-    description: "Создаем дома, которые сочетают красоту с комфортом, где каждое пространство служит и форме, и функции.",
-    icon: Home,
+    title: "Телевизионные шоу",
+    description: "Разрабатываем форматы для прямого эфира и записи: от концепции до режиссёрского сценария и технического обеспечения.",
+    icon: Tv,
   },
   {
-    title: "Коммерческие объекты",
+    title: "Корпоративные мероприятия",
     description:
-      "Проектируем рабочие пространства, которые вдохновляют на продуктивность и отражают ценности передовых организаций.",
-    icon: Building,
+      "Шоу-игры для команд любого размера. Укрепляем командный дух, поднимаем настроение и создаём поводы для общих историй.",
+    icon: Users,
   },
   {
-    title: "Дизайн интерьеров",
+    title: "Музыкальные форматы",
     description:
-      "Создаем интерьеры, которые гармонируют с архитектурной оболочкой, формируя целостный пространственный опыт.",
-    icon: Armchair,
+      "Угадай мелодию, музыкальные баттлы, живые викторины — форматы с живым звуком и неповторимой атмосферой концерта.",
+    icon: Music,
   },
   {
-    title: "Градостроительство",
+    title: "Турниры и чемпионаты",
     description:
-      "Формируем сообщества через продуманную интеграцию общественных пространств, зданий и природных элементов.",
-    icon: Trees,
+      "Организуем городские и корпоративные турниры с таблицами лидеров, наградами и медийным освещением.",
+    icon: Trophy,
   },
 ]
 
@@ -57,14 +57,14 @@ export function Expertise() {
     <section id="services" ref={sectionRef} className="py-32 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mb-20">
-          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
+          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши форматы</p>
           <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Экспертиза</HighlightedText>, отточенная
+            <HighlightedText>Экспертиза</HighlightedText>, рождённая
             <br />
-            практикой
+            на сцене
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Каждый проект опирается на десятилетия совокупного опыта, создавая архитектуру, которая одновременно инновационна и вневременна.
+            Каждый формат создаётся командой профессионалов с опытом в телевидении, ивент-индустрии и живых шоу.
           </p>
         </div>
 
